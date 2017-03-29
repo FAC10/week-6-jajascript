@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/FAC10/week-6-jajascript#readme",
   "devDependencies": {
+    "env2": "^2.1.1",
     "istanbul": "^0.4.5",
     "nodemon": "^1.11.0",
     "pg": "^6.1.5",

@@ -38,3 +38,6 @@ jspm_packages
 
 # Codecov Key
 Codecov.key
+
+# ElephantSQL
+config.env
