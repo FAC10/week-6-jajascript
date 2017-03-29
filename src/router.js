@@ -7,6 +7,9 @@ module.exports = (req, res) => {
   if (endpoint === '/') {
     handler.serveHome(req, res);
   }
+  else if (endpoint.indexOf('.html') === -1) {
+    handler.servePublic(req, res);
+  }
   else {
     handler.serveError(req, res);
   }

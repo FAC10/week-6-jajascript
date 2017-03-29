@@ -7,6 +7,11 @@ handler.serveHome = (req, res) => {
   readPublic(res, '/index.html');
 };
 
+handler.servePublic = (req, res) => {
+  var endpoint = req.url;
+  readPublic(res, endpoint);
+};
+
 const readPublic = (res, endpoint) => {
   fs.readFile(path.join(__dirname, '..', 'public', endpoint), (err, file) => {
     if (err) {
