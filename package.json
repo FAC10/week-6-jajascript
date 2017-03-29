@@ -1,0 +1,33 @@
+{
+  "name": "week-6-jajascript",
+  "version": "1.0.0",
+  "description": "Founders and Coders, Interesting Companies App",
+  "main": "server.js",
+  "scripts": {
+    "test": "node test/src/test | tap-spec",
+    "coverage": "istanbul cover tests/src/test.js",
+    "start": "node src/server.js",
+    "devStart": "nodemon src/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FAC10/week-6-jajascript.git"
+  },
+  "author": "jajascript",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FAC10/week-6-jajascript/issues"
+  },
+  "homepage": "https://github.com/FAC10/week-6-jajascript#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "nodemon": "^1.11.0",
+    "pg": "^6.1.5",
+    "shot": "^3.4.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
