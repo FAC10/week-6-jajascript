@@ -1,12 +1,15 @@
+[![Travis-Badge-Build](https://api.travis-ci.org/FAC10/week-6-jajascript.svg?branch=master)](https://travis-ci.org/FAC10/week-6-jajascript)
+[![Code Coverage](https://codecov.io/gh/FAC10/week-6-jajascript/branch/master/graph/badge.svg)](https://codecov.io/gh/FAC10/week-6-jajascript)
+
 Founders and Coders, Interesting Companies App
 
 # week-6-jajascript
 
-### User Story 
+### User Story
 
-As a member of Founders & Coders who wants to learning from interestering companies, I would like to share my suggestions with the organisation, so that we can crowdsource our connections to make it a reality. 
+As a member of Founders & Coders who wants to learning from interestering companies, I would like to share my suggestions with the organisation, so that we can crowdsource our connections to make it a reality.
 
-Thus, I should be able to: 
+Thus, I should be able to:
 * add an addition to the table, including company name and why they are interesting
 * see a table of results so that I don't add duplicate suggestions and can see what other people are interested in
 
@@ -25,7 +28,7 @@ Thus, I should be able to:
 ### Strech goals:
 - [ ] upvote feature
 - [ ] accountability (assignment) feature
-- [ ] prevent duplicate entries 
+- [ ] prevent duplicate entries
 
 ## Schema diagrams
 
@@ -45,12 +48,12 @@ author_id | interger | not null
 Column | Type | Modifiers
 --- | --- | ---
 id | integer | not null default
-first_name | character varying(100) | not null 
-surname | character varying(100) | not null 
+first_name | character varying(100) | not null
+surname | character varying(100) | not null
 
 ### Up_Votes: Many to Many
 
 Column | Type | Modifiers
 --- | --- | ---
-company_id | integer | not null 
-author_id | integer | not null 
+company_id | integer | not null
+author_id | integer | not null
