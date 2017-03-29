@@ -36,11 +36,11 @@ Column | Type | Modifiers
 --- | --- | ---
 id | integer | not null default
 company_name | character varying(100) | not null
+location | character varying(50) | not null
 reason | character varying(250) | not null
-location | character varying(100) | not null
 author_id | interger | not null
 
-### Author: 1 to Many
+### Authors: 1 to Many
 
 Column | Type | Modifiers
 --- | --- | ---
@@ -48,10 +48,9 @@ id | integer | not null default
 first_name | character varying(100) | not null 
 surname | character varying(100) | not null 
 
-### Up Votes: Many to Many
+### Up_Votes: Many to Many
 
 Column | Type | Modifiers
 --- | --- | ---
-id | integer | not null default
 company_id | integer | not null 
 author_id | integer | not null 
