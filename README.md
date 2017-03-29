@@ -26,3 +26,30 @@ Thus, I should be able to:
 - [ ] upvote feature
 - [ ] accountability (assignment) feature
 - [ ] prevent duplicate entries 
+
+## Schema diagrams
+
+Here are the schema diagrams for the database:
+
+### Companies: 1 to 1
+Column | Type | Modifiers
+--- | --- | ---
+id | integer | not null default
+company_name | character varying(100) | not null
+reason | character varying(250) | not null
+location | character varying(100) | not null
+author_id | interger | not null
+
+### Author: 1 to Many
+--- | --- | ---
+id | integer | not null default
+first_name | character varying(100) | not null
+surname | character varying(100) | not null
+
+### Up Votes: Many to Many
+
+Column | Type | Modifiers
+--- | --- | ---
+id | integer | not null default
+company_id | integer | not null 
+author_id | integer | not null 
