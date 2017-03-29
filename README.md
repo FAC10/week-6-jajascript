@@ -41,10 +41,12 @@ location | character varying(100) | not null
 author_id | interger | not null
 
 ### Author: 1 to Many
+
+Column | Type | Modifiers
 --- | --- | ---
 id | integer | not null default
-first_name | character varying(100) | not null
-surname | character varying(100) | not null
+first_name | character varying(100) | not null 
+surname | character varying(100) | not null 
 
 ### Up Votes: Many to Many
 
