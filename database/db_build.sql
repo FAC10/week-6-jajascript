@@ -26,7 +26,19 @@ INSERT INTO authors(first_name, surname) VALUES
 ('Antonio', 'Trabalza'),
 ('Alexis', 'Lui'),
 ('Joey', 'Louise'),
-('Jessica', 'Salmon')
+('Jessica', 'Salmon'),
+('Akin', 'Sowemimo'),
+('Alice', 'Carr'),
+('Finn', 'Hodgkin'),
+('Lucy', 'Sabin'),
+('Maja', 'Kudlicka'),
+('Martha', 'Ciobaniuc'),
+('Oli', 'Phillips'),
+('Philippa', 'Bywater'),
+('Piotr', 'Berebecki'),
+('Samatar', 'Axmed'),
+('Yvonne', 'Liu'),
+('Zooey', 'Miller')
 RETURNING ID;
 
 -- 1 TO 1
