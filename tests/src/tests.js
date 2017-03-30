@@ -2,12 +2,19 @@ const test = require('tape');
 const shot = require('shot');
 const fs = require('fs');
 const router = require('../../src/router');
+const setData = require('../../src/setData.js');
 
 test('Initialise', (t) => {
   let num = 2
   t.equal(num, 2, 'Should return 2');
   t.end();
 })
+
+// test('testing post', (t) =>{
+//   let query = "&name=antonio&company=self&reason=he's awesome";
+//   let obj = {'name':'antonio','company':'self','reason':"he's awesome"};
+//   t.equal(setData(query),obj, 'yeahhh' );
+// })
 
 // EXAMPLE SINGLE ROUTE TEST
 const singleRoute = () => {
@@ -44,6 +51,8 @@ const routesToTest = {
   route:[{url:'/', method:'get'},{statusCode: 200, headers:{'Content-Type':'text/html'}}],
   css:[{url:'/styles.css', method:'get'},{statusCode: 200, headers:{'Content-Type':'text/css'}}],
   js:[{url:'/main.js', method:'get'},{statusCode: 200, headers:{'Content-Type':'application/javascript'}}],
+  companies:[{url:'/companies', method:'get'},{statusCode: 200, headers:{'Content-Type':'application/json'}}],
+  'create-company':[{url:'/create-company', method:'post'},{statusCode: 301}],
   brokenurl:[{url:'/brokenurl'},{statusCode: 404}]
 };
 
