@@ -27,14 +27,14 @@ const readPublic = (res, endpoint) => {
         "jpg": "image/jpg",
         "ico": "image/x-icon"
       }
-      res.writeHead(200, {'Content-type': extensionType[extension]});
+      res.writeHead(200, {'Content-Type': extensionType[extension]});
       res.end(file);
     }
   })
 }
 
 handler.serveError = (req, res) => {
-  res.writeHead(404, {'Content-type': 'text/html'});
+  res.writeHead(404, {'Content-Type': 'text/html'});
   res.write('<h1>404: Page requested cannot be found!</h1>');
   res.end();
 };
