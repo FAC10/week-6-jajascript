@@ -93,15 +93,19 @@ header {
 #companies-table {
   width: 100%;
   background: pink;
+  text-align: center;
 }
 
 .th-name,
-.th-company {
+.th-company,
+.td-name,
+.td-company {
   width: 25%;
   background: red;
 }
 
-.th-reason {
+.th-reason,
+.td-reason {
   width: 50%;
 }
 
