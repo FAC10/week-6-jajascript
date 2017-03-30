@@ -9,7 +9,25 @@
     <h1>I am working!!</h1>
 
     <form class="form" action="/create-company" method="post">
-      <input type="text" name="name" value="" placeholder="Your Name">
+      <input type="text" name="name" value="" placeholder="Your Name" list="dropdown">
+      <datalist id="dropdown">
+        <option value='Akin'>
+        <option value='Alexis'>
+        <option value='Alice'>
+        <option value='Antonio'>
+        <option value='Finn'>
+        <option value='Jessica'>
+        <option value='Joey'>
+        <option value='Lucy'>
+        <option value='Maja'>
+        <option value='Martha'>
+        <option value='Oli'>
+        <option value='Philippa'>
+        <option value='Piotr'>
+        <option value='Samatar'>
+        <option value='Yvonne'>
+        <option value='Zooey'>
+      </datalist>
       <input type="text" name="company" value="" placeholder="Company Name">
       <input type="text" name="reason" value="" placeholder="Reason Why It's Interesting">
       <button type="submit" name="button">+ Add company</button>
