@@ -9,7 +9,7 @@ function setData(res, cb) {
     return acc;
   }, {});
 
-dbconnection.query(`INSERT INTO companies (company_name, reason, location, author_id) VALUES ('${dataObj.company}', '${dataObj.reason}', 'not known', 4)`,
+dbconnection.query(`INSERT INTO companies (company_name, reason, location, author_id) VALUES ('${dataObj.company}', '${dataObj.reason}', 'not known', (SELECT authors.id FROM authors WHERE authors.first_name = '${dataObj.name}'))`,
   (err,res) => {
     if (err) cb(err);
     else cb (null, res);
