@@ -36,6 +36,7 @@ header {
   background: red;
   margin: auto;
   width: 90%;
+  height: 100%;
 }
 
 @media(min-width: 992px) {
@@ -48,6 +49,9 @@ header {
 /* Section 1: Form Input */
 .companies-form-input {
   background: yellow;
+  min-height: 70%;
+  background: url("./assets/form-background.jpg");
+  background-size: cover;
 }
 
 /* Section 1: Form Input */
