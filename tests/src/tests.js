@@ -42,8 +42,8 @@ const singleStaticFile = () => {
 // and validates the server response of statusCode '200' and payload 'hello'
 const routesToTest = {
   route:[{url:'/', method:'get'},{statusCode: 200, headers:{'Content-Type':'text/html'}}],
-  // css:[{url:'/styles.css', method:'get'},{statusCode: 200, headers:{'Content-Type':'text/css'}}],
-  // js:[{url:'/main.js', method:'get'},{statusCode: 200, headers:{'Content-Type':'application/javascript'}}],
+  css:[{url:'/styles.css', method:'get'},{statusCode: 200, headers:{'Content-Type':'text/css'}}],
+  js:[{url:'/main.js', method:'get'},{statusCode: 200, headers:{'Content-Type':'application/javascript'}}],
   brokenurl:[{url:'/brokenurl'},{statusCode: 404}]
 };
 

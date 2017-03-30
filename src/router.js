@@ -26,17 +26,7 @@ module.exports = (req, res) => {
     });
   }
   else if (endpoint === '/create-company')  {
-    let body = '';
-    req.on('data', (chunk) => {
-      body += chunk;
-    });
-    req.on('end', () => {
-      setData(body, (err, response) => {
-        if (err) console.log(err);
-        res.writeHead(301, {'Location':'/'});
-        res.end();
-      });
-    });
+    handler.setData(req, res);
   }
 
 
