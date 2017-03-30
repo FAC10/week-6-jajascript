@@ -12,7 +12,10 @@
       <article class="form-container">
         <header class="companies-form-input-header"><h2>Which companies are interesting?</h2></header>
       <form class="form" action="/create-company" method="post">
-        <input type="text" name="name" value="" placeholder="Your Name" list="dropdown">
+
+        <label for="usersName" class="companies-form-label">Your Name
+          <input type="text" name="name" id="usersName" value="" placeholder="Your Name" list="dropdown">
+        </label>
         <datalist id="dropdown">
           <option value='Akin'>
           <option value='Alexis'>
@@ -31,8 +34,14 @@
           <option value='Yvonne'>
           <option value='Zooey'>
         </datalist>
-        <input type="text" name="company" value="" placeholder="Company Name">
-        <input type="text" name="reason" value="" placeholder="Reason Why It's Interesting">
+
+        <label for="companyName" class="companies-form-label">Company Name
+          <input type="text" name="company" id="companyName" value="" placeholder="Company Name">
+        </label>
+
+        <label for="reasonForInterest" class="companies-form-label">Why are they interesting?
+          <input type="text" name="reason" id="reasonForInterest" value="" placeholder="Reason Why It's Interesting">
+        </label>
         <button type="submit" name="button">+ Add company</button>
       </form>
       </article>

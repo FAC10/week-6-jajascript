@@ -68,6 +68,11 @@ header {
   margin: 1em 0 1em 0;
 }
 
+.companies-form-label {
+  display: inline-block;
+  width: 100%;
+}
+
 /* Section 1: Form Input */
 .companies-results-table {
   background: orange;
