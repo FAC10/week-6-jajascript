@@ -1,6 +1,6 @@
 const handler = require('./handler');
-const sqlQueries = require('./dynamic');
 const setData = require('./setData.js');
+// const sqlQueries = require('./dynamic.js');
 
 module.exports = (req, res) => {
 
@@ -18,17 +18,11 @@ module.exports = (req, res) => {
     handler.servePublic(req, res);
   }
   else if (endpoint === "/companies") {
-    sqlQueries.getData((err, response) => {
-      if (err) throw err;
-      let elephantSQLData = JSON.stringify(response);
-      res.writeHead(200, {"Content-Type": "application/json"});
-      res.end(elephantSQLData);
-    });
+    handler.sqlQueries(req, res);
   }
   else if (endpoint === '/create-company')  {
     handler.setData(req, res);
   }
-
 
   else {
     handler.serveError(req, res);

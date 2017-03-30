@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const setData = require('./setData.js');
-// const querystring = require('querystring');
+const sqlQueries = require('./dynamic');
 
 const handler = module.exports = {};
 
@@ -49,6 +49,14 @@ handler.setData = (req, res) => {
   })
 }
 
+handler.sqlQueries = (req,res) => {
+  sqlQueries.getData((err, response) => {
+    if (err) throw err;
+    let elephantSQLData = JSON.stringify(response);
+    res.writeHead(200, {"Content-Type": "application/json"});
+    res.end(elephantSQLData);
+  });
+}
 
 handler.serveError = (req, res) => {
   res.writeHead(404, {'Content-Type': 'text/html'});
