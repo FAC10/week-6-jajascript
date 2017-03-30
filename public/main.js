@@ -14,6 +14,7 @@ function request (url, cb) {
 
 
 function populateDom (err, data) {
+  console.log(data);
   if (err) {
     console.log(err);
   } else {
@@ -23,21 +24,25 @@ function populateDom (err, data) {
     companies.forEach(function(userInput) {
       var row = document.createElement("tr");
 
+      console.log(userInput);
       // create the value for the name of the inputter
       var name = document.createElement("td");
-      name.innerHTML = userInput.username;
+      name.innerHTML = userInput.first_name;
       row.appendChild(name);
+      // table.appendChild(row);
+
 
       // create the value for the name of the company
       var company = document.createElement("td");
-      company.innerHTML = userInput.company;
+      company.innerHTML = userInput.company_name;
       row.appendChild(company);
-      table.appendChild(row);
+      // table.appendChild(row);
 
       // create the value for the reason why the company is interesting
       var reason = document.createElement("td");
-      company.innerHTML = userInput.reason;
+      reason.innerHTML = userInput.reason;
       row.appendChild(reason);
+
       table.appendChild(row);
     });
   }

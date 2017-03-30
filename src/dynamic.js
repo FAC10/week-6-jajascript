@@ -3,7 +3,7 @@ const dbConnection = require('../database/db_connection.js');
 data = {};
 
 data.getData = (callback) => {
-  dbConnection.query(`SELECT company_name, first_name, reason
+  dbConnection.query(`SELECT first_name, company_name, reason
     FROM companies
     INNER JOIN authors
     ON (companies.author_id = authors.id);`,
