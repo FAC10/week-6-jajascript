@@ -28,6 +28,7 @@
     "tape": "^4.6.3"
   },
   "dependencies": {
+    "env2": "^2.1.1",
     "request": "^2.81.0"
   }
 }
