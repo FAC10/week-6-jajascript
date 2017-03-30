@@ -76,6 +76,8 @@ header {
 /* Section 1: Form Input */
 .companies-results-table {
   background: orange;
+  min-height: 50%;
+  position: relative;
 }
 
 .table-container {
@@ -83,4 +85,27 @@ header {
   background: purple;
   margin: auto;
   height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
+
+#companies-table {
+  width: 100%;
+  background: pink;
+}
+
+.th-name,
+.th-company {
+  width: 25%;
+  background: red;
+}
+
+.th-reason {
+  width: 50%;
+}
+
+
+
+
+/* */
