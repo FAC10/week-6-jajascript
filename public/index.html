@@ -9,12 +9,20 @@
     <h1>I am working!!</h1>
 
     <form class="form" action="/create-company" method="post">
-      <input type="text" name="name" value="" placeholder="Name">
-      <input type="text" name="company" value="" placeholder="Company">
-      <input type="text" name="reason" value="" placeholder="Reason">
+      <input type="text" name="name" value="" placeholder="Your Name">
+      <input type="text" name="company" value="" placeholder="Company Name">
+      <input type="text" name="reason" value="" placeholder="Reason Why It's Interesting">
       <button type="button" name="button">+ Add company</button>
     </form>
-
+    <div class="table-container">
+         <table id="companies-table">
+           <tr>
+             <th>Name</th>
+             <th>Company</th>
+             <th>Reason</th>
+           </tr>
+         </table>
+    </div>
   <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
