@@ -6,41 +6,44 @@
     <link rel="stylesheet" href="./styles.css" class="css">
   </head>
   <body>
-    <h1>I am working!!</h1>
+    <header><h1>App Name Here</h1></header>
 
-    <form class="form" action="/create-company" method="post">
-      <input type="text" name="name" value="" placeholder="Your Name" list="dropdown">
-      <datalist id="dropdown">
-        <option value='Akin'>
-        <option value='Alexis'>
-        <option value='Alice'>
-        <option value='Antonio'>
-        <option value='Finn'>
-        <option value='Jessica'>
-        <option value='Joey'>
-        <option value='Lucy'>
-        <option value='Maja'>
-        <option value='Martha'>
-        <option value='Oli'>
-        <option value='Philippa'>
-        <option value='Piotr'>
-        <option value='Samatar'>
-        <option value='Yvonne'>
-        <option value='Zooey'>
-      </datalist>
-      <input type="text" name="company" value="" placeholder="Company Name">
-      <input type="text" name="reason" value="" placeholder="Reason Why It's Interesting">
-      <button type="submit" name="button">+ Add company</button>
-    </form>
-    <div class="table-container">
-         <table id="companies-table">
-           <tr>
-             <th>Name</th>
-             <th>Company</th>
-             <th>Reason</th>
-           </tr>
-         </table>
+    <div class="page-container">
+      <form class="form" action="/create-company" method="post">
+        <input type="text" name="name" value="" placeholder="Your Name" list="dropdown">
+        <datalist id="dropdown">
+          <option value='Akin'>
+          <option value='Alexis'>
+          <option value='Alice'>
+          <option value='Antonio'>
+          <option value='Finn'>
+          <option value='Jessica'>
+          <option value='Joey'>
+          <option value='Lucy'>
+          <option value='Maja'>
+          <option value='Martha'>
+          <option value='Oli'>
+          <option value='Philippa'>
+          <option value='Piotr'>
+          <option value='Samatar'>
+          <option value='Yvonne'>
+          <option value='Zooey'>
+        </datalist>
+        <input type="text" name="company" value="" placeholder="Company Name">
+        <input type="text" name="reason" value="" placeholder="Reason Why It's Interesting">
+        <button type="submit" name="button">+ Add company</button>
+      </form>
+      <div class="table-container">
+           <table id="companies-table">
+             <tr>
+               <th>Name</th>
+               <th>Company</th>
+               <th>Reason</th>
+             </tr>
+           </table>
+      </div>
     </div>
+
   <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

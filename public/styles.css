@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+section,
+article {
+  padding: 0;
+}
+
+
+/* CODE STARTS HERE */
+
+header {
+  width: 100%;
+  background: pink;
+  padding: 1em;
+  text-align: right;
+}
+
+.page-container {
+  background: red;
+  margin: auto;
+  width: 90%;
+}
+
+@media(min-width: 992px) {
+  .page-container {
+    width: 80%;
+  }
+}
