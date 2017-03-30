@@ -9,7 +9,8 @@
     <header><h1>App Name Here</h1></header>
 
     <section class="companies-form-input">
-    <div class="page-container">
+      <article class="form-container">
+        <header class="companies-form-input-header"><h2>Which companies are interesting?</h2></header>
       <form class="form" action="/create-company" method="post">
         <input type="text" name="name" value="" placeholder="Your Name" list="dropdown">
         <datalist id="dropdown">
@@ -34,6 +35,7 @@
         <input type="text" name="reason" value="" placeholder="Reason Why It's Interesting">
         <button type="submit" name="button">+ Add company</button>
       </form>
+      </article>
     </section>
 
     <section class="companies-results-table">
@@ -47,7 +49,6 @@
            </table>
       </div>
     </section>
-  </div>
 
   <script type="text/javascript" src="./main.js"></script>
   </body>

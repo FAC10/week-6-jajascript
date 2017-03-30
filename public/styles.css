@@ -32,20 +32,6 @@ header {
   text-align: right;
 }
 
-.page-container {
-  background: red;
-  margin: auto;
-  width: 90%;
-  height: 100%;
-}
-
-@media(min-width: 992px) {
-  .page-container {
-    width: 80%;
-  }
-}
-
-
 /* Section 1: Form Input */
 .companies-form-input {
   background: yellow;
@@ -53,10 +39,43 @@ header {
   background: url("./assets/form-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  
+  position: relative;
+}
+
+.companies-form-input-header {
+  text-align: center;
+  margin: 1em 0 1em 0;
+}
+.form-container {
+  background: red;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+@media(min-width: 992px) {
+  .form-container {
+    width: 80%;
+  }
+}
+
+.form {
+  background: yellow;
+  min-height: 50%;
+  margin: 1em 0 1em 0;
 }
 
 /* Section 1: Form Input */
 .companies-results-table {
   background: orange;
+}
+
+.table-container {
+  width: 80%;
+  background: purple;
+  margin: auto;
+  height: 100%;
 }
