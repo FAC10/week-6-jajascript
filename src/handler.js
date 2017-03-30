@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const setData = require('./setData.js');
+// const querystring = require('querystring');
 
 const handler = module.exports = {};
 
@@ -34,19 +35,20 @@ const readPublic = (res, endpoint) => {
   })
 }
 
-handler.setData = (req) => {
+handler.setData = (req, res) => {
     let body = '';
     req.on('data', (chunk) => {
     body += chunk;
   })
-req.on('end', () => {
-  setData(body,(err,res) => {
-    if (err) console.log(err);
-    res.writeHead(301, {'Location':'/'});
-    res.end();
+  req.on('end', () => {
+    setData(body, (err, response) => {
+      if (err) console.log(err);
+      res.writeHead(301, {'Location':'/'});
+      res.end();
+    })
   })
-})
 }
+
 
 handler.serveError = (req, res) => {
   res.writeHead(404, {'Content-Type': 'text/html'});
