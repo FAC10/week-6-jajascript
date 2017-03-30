@@ -7,7 +7,7 @@ CREATE TABLE companies (
   company_name  varchar(100)  NOT NULL,
   location      varchar(50)   NOT NULL,
   reason        varchar(250)  NOT NULL,
-  author_id     integer       NOT NULL
+  author_id     integer REFERENCES authors(id) ON UPDATE CASCADE
 );
 
 CREATE TABLE authors (
