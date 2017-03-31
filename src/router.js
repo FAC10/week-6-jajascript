@@ -4,6 +4,7 @@ module.exports = (req, res) => {
 
   var endpoint = req.url;
   var extension = endpoint.split('.')[1];
+  console.log(endpoint);
   if (endpoint === '/') {
     handler.serveHome(req, res);
   }
