@@ -1,20 +1,18 @@
 const handler = require('./handler');
-const setData = require('./setData.js');
-// const sqlQueries = require('./dynamic.js');
 
 module.exports = (req, res) => {
 
   var endpoint = req.url;
   var extension = endpoint.split('.')[1];
+  console.log(endpoint);
   if (endpoint === '/') {
     handler.serveHome(req, res);
   }
-  else if (extension === 'css' ||
+  else if (extension === 'css' || !endpoint.includes('html')
            extension === 'js' ||
            extension === 'html' ||
            extension === 'ico' ||
-           extension === 'png' ||
-           extension === 'jpg') {
+           extension === 'png') {
     handler.servePublic(req, res);
   }
   else if (endpoint === "/companies") {

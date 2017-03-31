@@ -10,12 +10,6 @@ test('Initialise', (t) => {
   t.end();
 })
 
-// test('testing post', (t) =>{
-//   let query = "&name=antonio&company=self&reason=he's awesome";
-//   let obj = {'name':'antonio','company':'self','reason':"he's awesome"};
-//   t.equal(setData(query),obj, 'yeahhh' );
-// })
-
 // EXAMPLE SINGLE ROUTE TEST
 const singleRoute = () => {
   // Shot options
