@@ -1,6 +1,6 @@
 const dbConnection = require('../database/db_connection.js');
 
-data = {};
+let data = {};
 
 data.getData = (callback) => {
   dbConnection.query(`SELECT company_name, first_name, reason
