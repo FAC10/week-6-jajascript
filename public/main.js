@@ -14,7 +14,6 @@ function request (url, cb) {
 
 
 function populateDom (err, data) {
-  console.log(data);
   if (err) {
     console.log(err);
   } else {
@@ -24,7 +23,6 @@ function populateDom (err, data) {
     companies.forEach(function(userInput) {
       var row = document.createElement("tr");
 
-      console.log(userInput);
       // create the value for the name of the inputter
       var name = document.createElement("td");
       name.className = 'td-name';
