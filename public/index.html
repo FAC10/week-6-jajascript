@@ -8,13 +8,11 @@
   <body>
     <header class="page-header"><h1>FAC Connect</h1></header>
 
-    <section class="page-banner">
-    </section>
-
     <section class="companies-form">
-      <article class="form-container">
-        <header class="companies-form-input-header"><h2>Which companies are interesting to you?</h2></header>
-      <form class="form" action="/create-company" method="post">
+      <div class="companies-form-opacity-layer">
+        <article class="form-container">
+          <header class="companies-form-input-header"><h2>Which companies are interesting to you?</h2></header>
+        <form class="form" action="/create-company" method="post">
 
         <label for="usersName" class="companies-form-label accessible_elem">Your Name</label>
           <select class="companies-form-input" id="usersName" placeholder="Your Name" name="name" >
@@ -37,17 +35,18 @@
             <option value='Zooey'>Zooey</option>
           </select>
 
+          <label for="companyName" class="companies-form-label accessible_elem">Company Name</label>
+            <input type="text" class="companies-form-input" name="company" id="companyName" value="" placeholder="Company Name">
 
-        <label for="companyName" class="companies-form-label accessible_elem">Company Name</label>
-          <input type="text" class="companies-form-input" name="company" id="companyName" value="" placeholder="Company Name">
+          <label for="reasonForInterest" class="companies-form-label accessible_elem">Why are they interesting?</label>
+            <textarea name="reason" class="companies-form-input" id="reasonForInterest" value="" placeholder="Tell us why this company is interesting" rows="6"></textarea>
 
-        <label for="reasonForInterest" class="companies-form-label accessible_elem">Why are they interesting?</label>
-          <textarea name="reason" class="companies-form-input" id="reasonForInterest" value="" placeholder="Tell us why this company is interesting" rows="6"></textarea>
-
-        <button type="submit" class="companies-form-submit" name="button">+ Add company</button>
-      </form>
-      </article>
+          <button type="submit" class="companies-form-submit" name="button">+ Add company</button>
+        </form>
+        </article>
+      </div>
     </section>
+
 
     <section class="companies-results-table">
       <article class="table-container">

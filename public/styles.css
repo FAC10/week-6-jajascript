@@ -69,18 +69,23 @@ header {
   color: #fff;
 }
 
-.page-banner {
-  min-height: 50%;
+/* Section 1: Form Input */
+.companies-form {
+  /*background: yellow;*/
+  min-height: 80%;
   background: url("./assets/form-background-opt.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 
-/* Section 1: Form Input */
-.companies-form {
-  /*background: yellow;*/
-  min-height: 80%;
+.companies-form-opacity-layer {
+  background: rgba(255,255,255, 0.60);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .companies-form-input-header,
@@ -96,9 +101,10 @@ header {
   margin: 0 auto;
   width: 90%;
   min-height: 90%;
-  /*position: absolute;*/
+  position: absolute;
   left: 50%;
-  /*transform: translate(-50%,0);*/
+  top: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
 }
 
