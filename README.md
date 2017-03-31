@@ -3,7 +3,9 @@
 
 # Founders and Coders, Interesting Companies App
 
-Live site: https://second-degree.herokuapp.com/
+Live site: [https://second-degree.herokuapp.com/](https://second-degree.herokuapp.com/)
+
+Scroll to the bottom of the README for installation instructions, if you would like to run our project locally!
 
 ### User Story
 
@@ -57,3 +59,22 @@ Column | Type | Modifiers
 --- | --- | ---
 company_id | integer | not null
 author_id | integer | not null
+
+
+## Installation instructions
+
+ - Clone this repo and cd into it
+
+ - `git clone git@github.com:FAC10/week-6-jajascript.git`
+
+ - Run `npm install` to install all dependencies
+
+ - Run `npm run devStart` to start the server using Nodemon (which will automatically restart Node when changes are detected in your files)
+
+ - Navigate to http://localhost:4000/ in your browser
+
+ #### Tests
+
+ - Run `npm run test` to run the tests *(this will take around 30 secs to complete)*
+
+ - Run `npm run coverage` to check coverage *(this will take around 30 secs to complete)*
