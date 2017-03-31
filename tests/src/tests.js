@@ -69,7 +69,7 @@ function testRoute ([reqOptions, resOptions], name = '') {
   const method = reqOptions.method || 'get';
   const url = reqOptions.url || '/';
 
-  test(`Testing '${name || url}' with ${method}`, (t) => {
+  test(`Testing '${name || url}' with ${method}, please just hold on while I am working...`, (t) => {
     shot.inject(router, reqOptions,
       (res) => {
         Object.keys(resOptions).forEach(option => {
