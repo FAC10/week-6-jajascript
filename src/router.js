@@ -14,7 +14,8 @@ module.exports = (req, res) => {
            extension === 'js' ||
            extension === 'html' ||
            extension === 'ico' ||
-           extension === 'png') {
+           extension === 'png' ||
+           extension === 'jpg') {
     handler.servePublic(req, res);
   }
   else if (endpoint === "/companies") {

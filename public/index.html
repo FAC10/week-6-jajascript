@@ -6,41 +6,63 @@
     <link rel="stylesheet" href="./styles.css" class="css">
   </head>
   <body>
-    <h1>I am working!!</h1>
+    <header class="page-header"><h1>FAC Connect</h1></header>
 
-    <form class="form" action="/create-company" method="post">
-      <input type="text" name="name" value="" placeholder="Your Name" list="dropdown">
-      <datalist id="dropdown">
-        <option value='Akin'>
-        <option value='Alexis'>
-        <option value='Alice'>
-        <option value='Antonio'>
-        <option value='Finn'>
-        <option value='Jessica'>
-        <option value='Joey'>
-        <option value='Lucy'>
-        <option value='Maja'>
-        <option value='Martha'>
-        <option value='Oli'>
-        <option value='Philippa'>
-        <option value='Piotr'>
-        <option value='Samatar'>
-        <option value='Yvonne'>
-        <option value='Zooey'>
-      </datalist>
-      <input type="text" name="company" value="" placeholder="Company Name">
-      <input type="text" name="reason" value="" placeholder="Reason Why It's Interesting">
-      <button type="submit" name="button">+ Add company</button>
-    </form>
-    <div class="table-container">
+    <section class="page-banner">
+    </section>
+
+    <section class="companies-form">
+      <article class="form-container">
+        <header class="companies-form-input-header"><h2>Which companies are interesting to you?</h2></header>
+      <form class="form" action="/create-company" method="post">
+
+        <label for="usersName" class="companies-form-label accessible_elem">Your Name</label>
+          <input type="text" class="companies-form-input" name="name" id="usersName" value="" placeholder="Your Name" list="dropdown">
+        <datalist id="dropdown">
+          <option value='Akin'>
+          <option value='Alexis'>
+          <option value='Alice'>
+          <option value='Antonio'>
+          <option value='Finn'>
+          <option value='Jessica'>
+          <option value='Joey'>
+          <option value='Lucy'>
+          <option value='Maja'>
+          <option value='Martha'>
+          <option value='Oli'>
+          <option value='Philippa'>
+          <option value='Piotr'>
+          <option value='Samatar'>
+          <option value='Yvonne'>
+          <option value='Zooey'>
+        </datalist>
+
+        <label for="companyName" class="companies-form-label accessible_elem">Company Name</label>
+          <input type="text" class="companies-form-input" name="company" id="companyName" value="" placeholder="Company Name">
+
+        <label for="reasonForInterest" class="companies-form-label accessible_elem">Why are they interesting?</label>
+          <textarea name="reason" class="companies-form-input" id="reasonForInterest" value="" placeholder="Tell us why this company is interesting" rows="6"></textarea>
+
+        <button type="submit" class="companies-form-submit" name="button">+ Add company</button>
+      </form>
+      </article>
+    </section>
+
+    <section class="companies-results-table">
+      <article class="table-container">
+        <header class="companies-results-header">
+          <h2>Companies FAC10 &hearts;s</h2>
+        </header>
          <table id="companies-table">
-           <tr>
-             <th>Name</th>
-             <th>Company</th>
-             <th>Reason</th>
+           <tr class="companies-table-row">
+             <th class="th-name">Name</th>
+             <th class="th-company">Company</th>
+             <th class="th-reason">Reason</th>
            </tr>
          </table>
-    </div>
+      </article>
+    </section>
+
   <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

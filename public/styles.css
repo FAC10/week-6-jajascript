@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+/*
+Colour palette:
+  #50FFB1 - Eucalyptus
+  #4FB286 - Mint
+  #3C896D - Viridian
+  #546D64 - Stormcloud
+  #4D685A - Feldgrau
+  #2B2D42 - Gunmetal
+  #6B6D76 - Nickel
+*/
+
+
+/* General Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  min-width: 320px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  color: #2B2D42;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+section,
+article {
+  padding: 0;
+}
+
+/* ACCESSIBLE ELEMENT - credits to Jesse Bach /*
+/* https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe#.o6kv6t45t */
+/* ========================================================================= */
+/* this element allows you to hide text visually, but not from a screen reader */
+.accessible_elem {
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; /* added line */
+  width: 1px;
+}
+
+/* Page Setup */
+
+header {
+  width: 100%;
+  padding: 1em;
+  text-align: right;
+}
+
+.page-header {
+  box-shadow: 0 0 10px 0 grey;
+  background: #4FB286;
+  color: #fff;
+}
+
+.page-banner {
+  min-height: 50%;
+  background: url("./assets/form-background-opt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Section 1: Form Input */
+.companies-form {
+  /*background: yellow;*/
+  min-height: 80%;
+}
+
+.companies-form-input-header,
+.companies-results-header {
+  text-align: center;
+  margin: 1em 0 1em 0;
+  font-size: 1.5em;
+  color: #3C896D;
+}
+
+.form-container {
+  /*background: red;*/
+  margin: 0 auto;
+  width: 90%;
+  min-height: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  overflow: hidden;
+}
+
+@media(min-width: 992px) {
+  .form-container {
+    width: 80%;
+  }
+}
+
+.form {
+  /*background: yellow;*/
+  min-height: 50%;
+  margin: 1em auto 1em auto;
+  width: 60%;
+}
+
+.companies-form-label,
+.companies-form-input {
+  display: block;
+  width: 100%;
+}
+
+.companies-form-input {
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  border: 2px solid #4FB286;
+  -webkit-appearance: none; /* Removes weird inner shadow on iOS Safari */
+  font-size: 1.2em;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.2rem;
+}
+
+.companies-form-input:focus,
+.companies-form-submit:focus,
+.companies-form-submit:hover {
+  outline: none;
+  color: white;
+  background-color: #50FFB1;
+  border-color: #50FFB1;
+}
+
+.companies-form-submit {
+  display: block;
+  margin: 0 0 0 auto;
+  padding: 0.5em 0.75em;
+  font-size: 1.2rem;
+  background: none;
+  border: 2px solid #4FB286;
+  transition: all 0.2s;
+  color: #6B6D76;
+}
+
+
+/* Section 2: Display Results */
+.companies-results-table {
+  /*background: orange;*/
+  min-height: 50%;
+  position: relative;
+}
+
+.table-container {
+  width: 80%;
+  /*background: purple;*/
+  margin: 0 auto 5em auto;
+  min-height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#companies-table {
+  width: 100%;
+  /*background: pink;*/
+  text-align: center;
+}
+
+.companies-table-row {
+  border-bottom: 1px solid black;
+}
+
+.th-name,
+.th-company,
+.td-name,
+.td-company {
+  width: 25%;
+  /*background: red;*/
+  padding: 0.5em;
+}
+
+.th-reason,
+.td-reason {
+  width: 50%;
+  padding: 0.5em;
+}
+
+.th-name,
+.th-company,
+.th-reason {
+  font-size: 1.3em
+}

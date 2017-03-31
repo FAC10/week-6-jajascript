@@ -27,6 +27,7 @@ function populateDom (err, data) {
       console.log(userInput);
       // create the value for the name of the inputter
       var name = document.createElement("td");
+      name.className = 'td-name';
       name.innerHTML = userInput.first_name;
       row.appendChild(name);
       // table.appendChild(row);
@@ -34,12 +35,14 @@ function populateDom (err, data) {
 
       // create the value for the name of the company
       var company = document.createElement("td");
+      company.className = 'td-company';
       company.innerHTML = userInput.company_name;
       row.appendChild(company);
       // table.appendChild(row);
 
       // create the value for the reason why the company is interesting
       var reason = document.createElement("td");
+      reason.className = 'td-reason';
       reason.innerHTML = userInput.reason;
       row.appendChild(reason);
 
