@@ -15,7 +15,6 @@ function request (url, cb) {
 
 function populateDom (err, data) {
   if (err) {
-    console.log(err);
   } else {
     var companies = JSON.parse(data);
     var table = document.getElementById("companies-table");
