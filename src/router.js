@@ -4,6 +4,7 @@ module.exports = (req, res) => {
 
   var endpoint = req.url;
   var extension = endpoint.split('.')[1];
+  console.log(endpoint);
   if (endpoint === '/') {
     handler.serveHome(req, res);
   }
@@ -11,8 +12,7 @@ module.exports = (req, res) => {
            extension === 'js' ||
            extension === 'html' ||
            extension === 'ico' ||
-           extension === 'png' ||
-           extension === 'jpg') {
+           extension === 'png') {
     handler.servePublic(req, res);
   }
   else if (endpoint === "/companies") {

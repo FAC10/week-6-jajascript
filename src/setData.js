@@ -1,7 +1,7 @@
 const dbconnection = require('../database/db_connection.js');
 
-function setData(res, cb) {
-  const dataObj = res.split('&').reduce((acc, item) => {
+function setData(body, cb) {
+  const dataObj = body.split('&').reduce((acc, item) => {
     const keyValue = item.split('=');
     if (keyValue[1]) {
       acc[keyValue[0]]=keyValue[1];
