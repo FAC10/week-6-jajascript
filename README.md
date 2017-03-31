@@ -71,15 +71,9 @@ author_id | integer | not null
 
 #### Database
 
- ##### If you are in the FAC10 Gitter channel
-
  - Create a `config.env` file in the root of the project
 
- - Add the `DB_URL` variable, as noted in the FAC10 Gitter channel (posted by Joey Scott, 31st March 2017 at 10:06)
-
-##### Else
-
- - create database locally?! build db?
+ - Add the `DB_URL` variable, as noted in the FAC10 Gitter channel (posted by Joey Scott, 31st March 2017 at 10:06) __OR__ ask JAJAscript team members :+1:
 
 #### Run locally
 
