@@ -8,7 +8,7 @@ module.exports = (req, res) => {
   if (endpoint === '/') {
     handler.serveHome(req, res);
   }
-  else if (extension === 'css' ||
+  else if (extension === 'css' || !endpoint.includes('html')
            extension === 'js' ||
            extension === 'html' ||
            extension === 'ico' ||
