@@ -145,7 +145,7 @@ header {
 
 .companies-form-submit {
   display: block;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   padding: 0.5em 0.75em;
   font-size: 1.2rem;
   background: none;
