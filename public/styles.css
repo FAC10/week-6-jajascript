@@ -74,9 +74,18 @@ header {
   /*background: yellow;*/
   min-height: 80%;
   background: url("./assets/form-background-opt.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.companies-form-opacity-layer {
+  background: rgba(255,255,255, 0.60);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .companies-form-input-header,
