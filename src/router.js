@@ -1,6 +1,4 @@
 const handler = require('./handler');
-const setData = require('./setData.js');
-// const sqlQueries = require('./dynamic.js');
 
 module.exports = (req, res) => {
 
