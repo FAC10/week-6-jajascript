@@ -96,9 +96,9 @@ header {
   margin: 0 auto;
   width: 90%;
   min-height: 90%;
-  position: absolute;
+  /*position: absolute;*/
   left: 50%;
-  transform: translate(-50%,0);
+  /*transform: translate(-50%,0);*/
   overflow: hidden;
 }
 
