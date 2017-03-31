@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 /* General Setup */
 * {
   box-sizing: border-box;
@@ -9,6 +11,8 @@ body {
   height: 100%;
   background-color: #fff;
   min-width: 320px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
 }
 
 h1,
@@ -136,7 +140,7 @@ header {
 
 .table-container {
   width: 80%;
-  background: purple;
+  /*background: purple;*/
   margin: 0 auto 5em auto;
   min-height: 100%;
   position: absolute;
@@ -168,6 +172,8 @@ header {
   width: 50%;
   padding: 0.5em;
 }
+
+
 
 
 
