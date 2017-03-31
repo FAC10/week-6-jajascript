@@ -65,15 +65,29 @@ author_id | integer | not null
 
  - Clone this repo and cd into it
 
- - `git clone git@github.com:FAC10/week-6-jajascript.git`
+  - `git clone git@github.com:FAC10/week-6-jajascript.git`
 
  - Run `npm install` to install all dependencies
+
+#### Database
+
+ ##### If you are in the FAC10 Gitter channel
+
+ - Create a `config.env` file in the root of the project
+
+ - Add the `DB_URL` variable, as noted in the FAC10 Gitter channel (posted by Joey Scott, 31st March 2017 at 10:06)
+
+##### Else
+
+ - create database locally?! build db?
+
+#### Run locally
 
  - Run `npm run devStart` to start the server using Nodemon (which will automatically restart Node when changes are detected in your files)
 
  - Navigate to http://localhost:4000/ in your browser
 
- #### Tests
+#### Tests
 
  - Run `npm run test` to run the tests *(this will take around 30 secs to complete)*
 
