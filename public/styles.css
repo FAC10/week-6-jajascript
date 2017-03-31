@@ -50,7 +50,6 @@ article {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
-  position: absolute;
   white-space: nowrap; /* added line */
   width: 1px;
 }
@@ -80,12 +79,21 @@ header {
   position: relative;
 }
 
-.companies-form-opacity-layer {
+.companies-form::after {
   background: rgba(255,255,255, 0.60);
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
+  left: 0;
+  content: '';
+  z-index: 0;
+
+}
+
+.companies-form-opacity-layer {
+  z-index: 10;
+  position: relative;
 }
 
 .companies-form-input-header,
@@ -101,10 +109,6 @@ header {
   margin: 0 auto;
   width: 90%;
   min-height: 90%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
 }
 
@@ -118,7 +122,7 @@ header {
   /*background: yellow;*/
   min-height: 50%;
   margin: 1em auto 1em auto;
-  width: 60%;
+  max-width: 40em;
 }
 
 .companies-form-label,
