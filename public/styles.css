@@ -99,6 +99,7 @@ header {
   position: absolute;
   left: 50%;
   transform: translate(-50%,0);
+  overflow: hidden;
 }
 
 @media(min-width: 992px) {
@@ -201,9 +202,3 @@ header {
 .th-reason {
   font-size: 1.3em
 }
-
-
-
-
-
-/* */
