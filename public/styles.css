@@ -25,7 +25,7 @@ body {
   background-color: #fff;
   min-width: 320px;
   font-family: 'Lato', sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   color: #2B2D42;
 }
 
@@ -58,7 +58,7 @@ article {
 
 header {
   width: 100%;
-  padding: 1em;
+  padding: 1rem;
   text-align: right;
 }
 
@@ -99,8 +99,8 @@ header {
 .companies-form-input-header,
 .companies-results-header {
   text-align: center;
-  margin: 1em 0 1em 0;
-  font-size: 1.5em;
+  margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
   color: #3C896D;
 }
 
@@ -121,8 +121,8 @@ header {
 .form {
   /*background: yellow;*/
   min-height: 50%;
-  margin: 1em auto 1em auto;
-  max-width: 40em;
+  margin: 1rem auto 1rem auto;
+  max-width: 40rem;
 }
 
 .companies-form-label,
@@ -132,12 +132,12 @@ header {
 }
 
 .companies-form-input {
-  padding: 1em;
-  margin-top: 0.5em;
-  margin-bottom: 1.5em;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
   border: 2px solid #4FB286;
   -webkit-appearance: none; /* Removes weird inner shadow on iOS Safari */
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 ::-webkit-input-placeholder {
@@ -156,7 +156,7 @@ header {
 .companies-form-submit {
   display: block;
   margin: 0 0 0 auto;
-  padding: 0.5em 0.75em;
+  padding: 0.5rem 0.75rem;
   font-size: 1.2rem;
   background: none;
   border: 2px solid #4FB286;
@@ -175,7 +175,7 @@ header {
 .table-container {
   width: 80%;
   /*background: purple;*/
-  margin: 0 auto 5em auto;
+  margin: 0 auto 5rem auto;
   min-height: 100%;
   position: absolute;
   left: 50%;
@@ -198,17 +198,17 @@ header {
 .td-company {
   width: 25%;
   /*background: red;*/
-  padding: 0.5em;
+  padding: 0.5rem;
 }
 
 .th-reason,
 .td-reason {
   width: 50%;
-  padding: 0.5em;
+  padding: 0.5rem;
 }
 
 .th-name,
 .th-company,
 .th-reason {
-  font-size: 1.3em
+  font-size: 1.3rem
 }
